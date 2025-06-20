@@ -22,6 +22,51 @@ Médias :
 	- fournie au format WEBP
 - Images des cartes de la section "Prochaine édition"
 	- non fournies, choix d'images entièrement libre */
+.orbitron-nc-brand {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.orbitron-title {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-text {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-label {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 0.5rem 0 0 0;
+}
+
+.burger-menu {
+    width: 32px;
+    height: 32px;
+}
 
 .bg-primary {
     background-color: #4A148C !important;
@@ -44,7 +89,8 @@ Médias :
     color: #FFEB3B !important;
 }
 
-.text-light {
+.text-light,
+.link-light {
     color: #E0E0E0 !important;
 }
 
@@ -59,9 +105,36 @@ Médias :
     border-radius: 10px !important;
 }
 
-.glass-text {  
-  background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(10px) !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 0.5rem !important;
+.glass-text {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.5rem !important;
 }
+
+.nc-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.nc-small-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.slogan {
+    bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    .slogan {
+        margin-left: 8.33% !important;
+        margin-bottom: 4rem !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

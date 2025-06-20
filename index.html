@@ -19,24 +19,21 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="col-12 bg-black text-secondary">
+<body id="home" class="roboto-text col-12 bg-black text-secondary">
 
-    <header class="bg-primary">
+    <header class="bg-primary col-12">
         <nav class="container-fluid col-10 d-flex justify-content-between align-items-center py-2 gap-3">
-            <p class="m-0 d-flex align-items-center justify-content-start text-light"><img class="me-2" class="w-25;"
-                    src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
-            <div>
-                <a class="d-md-none" href=""><img src="./images/burger.svg" alt="Logo de menu burger"></a>
+            <p class="orbitron-nc-brand m-0 d-flex align-items-center justify-content-start text-light"><img
+                    class="me-2 nc-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
+            <div class="montserrat-link">
+                <a class="d-md-none" href="./index.html#home"><img class="burger-menu" src="./images/burger.svg"
+                        alt="Logo de menu burger"></a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none" href="">Accueil</a>
-                <a class="d-none d-md-inline-block link-light text-decoration-none" href="">Tournoi</a>
+                <a class="d-none d-md-inline-block link-light text-decoration-none" href="./index.html#next-edition-container">Tournois</a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none border border-2 border-secondary p-1 rounded"
                     href="./index.html#application-form-container">Participer</a>
             </div>
         </nav>
-    </header>
-
-    <main class="container-fluid col-10 align-content-center justify-content-center text-light">
-
         <section class="position-relative w-100 mb-2">
             <picture>
                 <source srcset="./images/banner_full.webp" media="(min-width: 1400px)">
@@ -46,18 +43,20 @@
                 <source srcset="./images/banner_768.webp" media="(min-width: 576px)">
                 <img src="./images/banner_480.webp" class="img-fluid" alt="Bannière de Nexus Clash">
             </picture>
-
-            <div
-                class="glass-text position-absolute bottom-0 border-start-0 bg-light text-secondary text-center p-4 mb-2 rounded">
-                <p class="fs-3">
+            <div class="glass-text position-absolute bg-light text-secondary slogan">
+                <p class="fs-4 text-start">
                     Bienvenue sur <strong>Nexus Clash</strong>,<br>
                     le cœur battant de l'esport
                 </p>
             </div>
         </section>
+    </header>
 
-        <section class=" mb-2 text-secondary">
-            <h1 class="text-center">Qu’est-ce que Nexus Clash ?</h2>
+    <main class="container-fluid col-10 align-content-center justify-content-center text-light">
+        <br>
+        <section
+            class="container-fluid d-flex flex-column align-items-center justify-content-center text-secondary col-md-10 col-lg-8">
+            <h1 class="orbitron-title text-center">Qu’est-ce que Nexus Clash ?</h2>
                 <p class="text-center">Nexus Clash est le plus grand événement d’esport, qui rassemble les joueurs les
                     plus talentueux du monde entier pour une compétition d’une intensité inégalée.</p>
                 <p class="text-center">Chaque année, Nexus Clash devient l'arène où les élites du gaming s'affrontent
@@ -72,72 +71,73 @@
                     l'esport année après année !
                 </p>
         </section>
-
-        <section id="next-edition-container" class="container-fluid d-flex flex-column col-8">
-            <h2 class="text-center ft text-secondary">Prochaine édition</h2>
-            <div class="container-fluid d-flex flex-column">
-                <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/cashprize.png"
+        <br>
+        <section id="next-edition-container" class="container-fluid d-flex flex-column">
+            <h2 class="orbitron-title text-center text-lg-start ft text-secondary">Prochaine édition</h2>
+            <div
+                class="container-fluid d-flex flex-column flex-md-row flex-md-wrap flex-lg-nowrap align-items-center justify-content-center justify-content-lg-between gap-3 gap-lg-5">
+                <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/cashprize.png"
                         alt="Icône de dotation">
                     <p class="card-text text-center text-secondary bg-primary-subtle">5 000 € de<br>cashprize</p>
                 </div>
-                <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/game_selection.png"
-                        alt="Icône de jeux sélectionnés">
+                <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img"
+                        src="./images/game_selection.png" alt="Icône de jeux sélectionnés">
                     <p class="card-text text-center text-secondary bg-primary-subtle">16 jeux<br>sélectionnés</p>
                 </div>
-                <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/players.png"
+                <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/players.png"
                         alt="Icône de joueurs participant">
                     <p class="card-text text-center text-secondary bg-primary-subtle">128 joueurs<br>participant
                 </div>
-                <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/audience.png"
+                <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/audience.png"
                         alt="Icôone  de spectateurs">
                     <p class="card-text text-center text-secondary bg-primary-subtle">50 000<br>spectateurs</p>
                 </div>
-                <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/arenas.png"
+                <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/arenas.png"
                         alt="Icône d'arène">
                     <p class="card-text text-center text-secondary bg-primary-subtle">1 salle,<br>4 arènes</p>
                 </div>
             </div>
         </section>
-
+        <br>
         <section id="application-form-container">
             <form name="application"
                 class="container-fluid d-flex flex-wrap flex-column flex-md-row justify-content-md-between col-md-10 col-lg-6 border border-2 border-secondary p-3 rounded bg-dark bg-gradient text-light">
-                <h2 class="col-12 mt-2">Participer à Nexus Clash</h2>
+                <h2 class="orbitron-title col-12 mt-2">Participer à Nexus Clash</h2>
                 <div class="col-12 col-md-5">
-                    <label for="forename" class="form-label">Prénom</label>
+                    <label for="forename" class="roboto-label form-label">Prénom</label>
                     <input name="forename" type="text" class="form-control" />
                 </div>
                 <div class="col-12 col-md-5">
-                    <label for="name" class="form-label">Nom de famille</label>
+                    <label for="name" class="roboto-label form-label">Nom de famille</label>
                     <input name="name" type="text" class="form-control" />
                 </div>
                 <div class="col-12 col-md-5">
-                    <label for="pseudo" class="form-label">Pseudonyme</label>
+                    <label for="pseudo" class="roboto-label form-label">Pseudonyme</label>
                     <input name="pseudo" type="text" class="form-control" />
                 </div>
                 <div class="col-12 col-md-5">
-                    <label for="email" class="form-label">E-mail</label>
+                    <label for="email" class="roboto-label form-label">E-mail</label>
                     <input name="email" type="email" class="form-control" />
                 </div>
-                <div class="col-12 col-md-10">
+                <div class="roboto-label col-12">
                     <input name="agreement" type="checkbox" class="col-1 form-check-input" />
-                    <label for="agreement" class="col-10 form-label">J'accepte que mes données soients
+                    <label for="agreement" class="col-11 form-label">J'accepte que mes données soients
                         utilisées, conformément à la politique de confidentialité</label>
                 </div>
                 <input type="submit" value="Participer" class="col-12 btn btn-secondary" />
             </form>
         </section>
-
+        <br>
     </main>
 
-    <footer class="col-12 d-flex flex-column bg-primary align-items-center justify-content-center mt-3">
+    <footer class="d-flex flex-column bg-primary align-items-center justify-content-center mt-3">
         <div class="flex-row">
-            <p class="text-light text-center"><img class="w-25" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS
-                CLASH</p>
+            <p class="orbitron-nc-brand mt-2 d-flex align-items-center justify-content-start text-light"><img
+                    class="me-2 nc-small-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
         </div>
-        <div class="link-light text-center">
-            <a class="link-light" href="">Mentions légales</p>
-                <a class="link-light" href="">Politique de confidentialité</p>
+        <div class="montserrat-link d-flex flex-column flex-md-row gap-md-3 text-center">
+            <a class="link-light text-decoration-none" href="">Mentions légales</p>
+                <a class="link-light text-decoration-none" href="">Politique de confidentialité</p>
         </div>
     </footer>
 
