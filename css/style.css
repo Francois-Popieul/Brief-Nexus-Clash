@@ -1,0 +1,67 @@
+/* Couleurs :
+- #4A148C  :  violet foncé
+- #7C4DFF  :  violet clair
+- #FFEB3B  :  jaune
+- #121212  :  noir
+- #E0E0E0  :  gris clair
+
+Polices :
+- Orbitron
+- Montserrat
+- Roboto
+
+Styles de designs :
+- Utilisation d'ombres portées
+- Glassmorphisme
+
+Médias :
+- Logo
+	- fourni au format SVG
+	- à utiliser exclusivement sur un fond sombre
+- Bannière principale
+	- fournie au format WEBP
+- Images des cartes de la section "Prochaine édition"
+	- non fournies, choix d'images entièrement libre */
+
+.bg-primary {
+    background-color: #4A148C !important;
+}
+
+.bg-primary-subtle {
+    background-color: #7C4DFF !important;
+}
+
+.btn-secondary {
+    background-color: #FFEB3B !important;
+    color: #121212;
+}
+
+.bg-black {
+    background-color: #121212 !important;
+}
+
+.text-secondary {
+    color: #FFEB3B !important;
+}
+
+.text-light {
+    color: #E0E0E0 !important;
+}
+
+.border-secondary {
+    border-color: #FFEB3B !important;
+    border-radius: 10px !important;
+}
+
+.card {
+    border-color: #FFEB3B !important;
+    border-width: 2px !important;
+    border-radius: 10px !important;
+}
+
+.glass-text {  
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem !important;
+}

@@ -16,35 +16,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <script src="./js/script.js" type="script"></script>
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="col-12 bg-black text-secondary">
 
     <header class="bg-primary">
-        <nav class="container-fluid col-10 d-flex justify-content-between align-items-center bg-danger py-2 gap-3">
+        <nav class="container-fluid col-10 d-flex justify-content-between align-items-center py-2 gap-3">
             <p class="m-0 d-flex align-items-center justify-content-start text-light"><img class="me-2" class="w-25;"
                     src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
             <div>
                 <a class="d-md-none" href=""><img src="./images/burger.svg" alt="Logo de menu burger"></a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none" href="">Accueil</a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none" href="">Tournoi</a>
-                <a class="d-none d-md-inline-block link-light text-decoration-none border border-2 border-primary p-2 rounded"
-                    href="./index.html#application">Participer</a>
+                <a class="d-none d-md-inline-block link-light text-decoration-none border border-2 border-secondary p-1 rounded"
+                    href="./index.html#application-form-container">Participer</a>
             </div>
         </nav>
     </header>
 
-    <main class="container-fluid col-10 bg-gradient align-content-center justify-content-center text-light">
+    <main class="container-fluid col-10 align-content-center justify-content-center text-light">
 
-        <section class="position-relative w-100">
-            <img src="./images/banner_full.webp" alt="Bannière de Nexus Clash" class="w-100 vh-100 object-fit-cover">
+        <section class="position-relative w-100 mb-2">
+            <picture>
+                <source srcset="./images/banner_full.webp" media="(min-width: 1400px)">
+                <source srcset="./images/banner_1920.webp" media="(min-width: 1200px)">
+                <source srcset="./images/banner_1280.webp" media="(min-width: 992px)">
+                <source srcset="./images/banner_960.webp" media="(min-width: 768px)">
+                <source srcset="./images/banner_768.webp" media="(min-width: 576px)">
+                <img src="./images/banner_480.webp" class="img-fluid" alt="Bannière de Nexus Clash">
+            </picture>
 
             <div
-                class="glass-text position-absolute bottom-50 start-50 translate-middle text-white text-center p-4 rounded">
+                class="glass-text position-absolute bottom-0 border-start-0 bg-light text-secondary text-center p-4 mb-2 rounded">
                 <p class="fs-3">
                     Bienvenue sur <strong>Nexus Clash</strong>,<br>
                     le cœur battant de l'esport
@@ -52,7 +56,7 @@
             </div>
         </section>
 
-        <section>
+        <section class=" mb-2 text-secondary">
             <h1 class="text-center">Qu’est-ce que Nexus Clash ?</h2>
                 <p class="text-center">Nexus Clash est le plus grand événement d’esport, qui rassemble les joueurs les
                     plus talentueux du monde entier pour une compétition d’une intensité inégalée.</p>
@@ -69,36 +73,36 @@
                 </p>
         </section>
 
-        <section id="next-edition-container" class="container-fluid d-flex flex-column col-8 bg-success">
-            <h2 class="text-center text-light ft">Prochaine édition</h2>
+        <section id="next-edition-container" class="container-fluid d-flex flex-column col-8">
+            <h2 class="text-center ft text-secondary">Prochaine édition</h2>
             <div class="container-fluid d-flex flex-column">
                 <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/cashprize.png"
                         alt="Icône de dotation">
-                    <p class="card-text text-center bg-secondary">5 000 € de<br>cashprize</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">5 000 € de<br>cashprize</p>
                 </div>
                 <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/game_selection.png"
                         alt="Icône de jeux sélectionnés">
-                    <p class="card-text text-center bg-secondary">16 jeux<br>sélectionnés</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">16 jeux<br>sélectionnés</p>
                 </div>
                 <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/players.png"
                         alt="Icône de joueurs participant">
-                    <p class="card-text text-center  bg-secondary">128 joueurs<br>participant
+                    <p class="card-text text-center text-secondary bg-primary-subtle">128 joueurs<br>participant
                 </div>
                 <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/audience.png"
                         alt="Icôone  de spectateurs">
-                    <p class="card-text text-center bg-secondary">50 000<br>spectateurs</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">50 000<br>spectateurs</p>
                 </div>
                 <div class="card col-8 offset-2 mb-3"><img class="w-100 card-img" src="./images/arenas.png"
                         alt="Icône d'arène">
-                    <p class="card-text text-center bg-secondary">1 salle,<br>4 arènes</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">1 salle,<br>4 arènes</p>
                 </div>
             </div>
         </section>
 
         <section id="application-form-container">
             <form name="application"
-                class="container-fluid d-flex flex-wrap flex-column flex-md-row justify-content-md-between col-md-10 col-lg-6 border border-2 border-primary p-5 rounded bg-dark bg-gradient">
-                <h2 class="col-12">Participer à Nexus Clash</h2>
+                class="container-fluid d-flex flex-wrap flex-column flex-md-row justify-content-md-between col-md-10 col-lg-6 border border-2 border-secondary p-3 rounded bg-dark bg-gradient text-light">
+                <h2 class="col-12 mt-2">Participer à Nexus Clash</h2>
                 <div class="col-12 col-md-5">
                     <label for="forename" class="form-label">Prénom</label>
                     <input name="forename" type="text" class="form-control" />
@@ -117,10 +121,10 @@
                 </div>
                 <div class="col-12 col-md-10">
                     <input name="agreement" type="checkbox" class="col-1 form-check-input" />
-                    <label for="agreement" class="col-11 form-label">J'accepte que mes données soients
+                    <label for="agreement" class="col-10 form-label">J'accepte que mes données soients
                         utilisées, conformément à la politique de confidentialité</label>
                 </div>
-                <input type="submit" value="Participer" class="col-12 btn btn-primary" />
+                <input type="submit" value="Participer" class="col-12 btn btn-secondary" />
             </form>
         </section>
 
@@ -136,6 +140,11 @@
                 <a class="link-light" href="">Politique de confidentialité</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js" type="script"></script>
 
 </body>
 
