@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nexus Clash Homepage</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +25,10 @@
     <header class="bg-primary col-12">
         <nav class="container-fluid col-10 d-flex justify-content-between align-items-center py-2 gap-3">
             <p class="orbitron-nc-brand m-0 d-flex align-items-center justify-content-start text-light"><img
-                    class="me-2 nc-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
+                    class="me-2 nc-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS&nbsp;CLASH</p>
             <div class="montserrat-link">
                 <!-- Burger menu button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
-                    aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="burger-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
                     <img class="d-md-none burger-menu" src="./images/burger.svg" alt="Logo de menu burger">
                 </button>
                 <!-- Collapsible navigation links -->
@@ -47,8 +47,9 @@
                     </ul>
                 </div>
                 <!-- Navigation links on tablet and desktop -->
-                <a class="d-none d-md-inline-block link-light text-decoration-none" href="">Accueil</a>
-                <a class="d-none d-md-inline-block link-light text-decoration-none" href="./index.html#next-edition-container">Tournois</a>
+                <a class="d-none d-md-inline-block link-light text-decoration-none" href="./index.html#home">Accueil</a>
+                <a class="d-none d-md-inline-block link-light text-decoration-none"
+                    href="./index.html#next-edition-container">Tournois</a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none border border-2 border-secondary p-1 rounded"
                     href="./index.html#application-form-container">Participer</a>
             </div>
@@ -62,7 +63,8 @@
                 <source srcset="./images/banner_768.webp" media="(min-width: 576px)">
                 <img src="./images/banner_768.webp" class="img-fluid" alt="Bannière de Nexus Clash">
             </picture>
-            <div class="glass-text position-absolute bg-light text-secondary slogan">Bienvenue sur <strong>Nexus Clash</strong>,<br>le cœur battant de l'esport</div>
+            <div class="glass-text position-absolute bg-light text-secondary slogan">Bienvenue sur <strong>Nexus
+                    Clash</strong>,<br>le cœur battant de l&rsquo;esport</div>
         </section>
     </header>
 
@@ -70,19 +72,17 @@
         <br>
         <section
             class="container-fluid d-flex flex-column align-items-center justify-content-center text-secondary col-md-10 col-lg-8">
-            <h1 class="orbitron-title text-center">Qu’est-ce que Nexus Clash ?</h2>
-                <p class="text-center">Nexus Clash est le plus grand événement d’esport, qui rassemble les joueurs les
-                    plus talentueux du monde entier pour une compétition d’une intensité inégalée.</p>
-                <p class="text-center">Chaque année, Nexus Clash devient l'arène où les élites du gaming s'affrontent
+            <h1 class="orbitron-title text-center">Qu&rsquo;est-ce que Nexus Clash&nbsp;?</h2>
+                <p class="text-center">Nexus Clash est le plus grand événement d&rsquo;esport, qui rassemble les joueurs
+                    les plus talentueux du monde entier pour une compétition d&rsquo;une intensité inégalée.</p>
+                <p class="text-center">Chaque année, Nexus Clash devient l&rsquo;arène où les élites du gaming s&rsquo;affrontent
                     sur un panel varié de jeux. Que vous soyez joueur, spectateur ou passionné, cet événement est une
-                    célébration de l’esport sous toutes ses formes.</p>
-                <p class="text-center">Au cœur de l’action, vous retrouverez des tournois légendaires, des cashprizes
-                    exceptionnels et une mise en scène immersive qui plonge les fans dans l'univers de leurs jeux
-                    favoris. Les meilleurs joueurs s'affrontent pour la gloire, le prestige et la reconnaissance ultime,
-                    sous le regard attentif d’une communauté internationale.</p>
-                <p class="text-center">Que vous soyez prêt à entrer dans l’arène ou à vibrer devant les performances
-                    spectaculaires des plus grands champions, Nexus Clash est l'événement incontournable qui redéfinit
-                    l'esport année après année !
+                    célébration de l&rsquo;esport sous toutes ses formes.</p>
+                <p class="text-center">Au cœur de l&rsquo;action, vous retrouverez des tournois légendaires, des
+                    cashprizes exceptionnels et une mise en scène immersive qui plonge les fans dans l&rsquo;univers de leurs jeux
+                    favoris. Les meilleurs joueurs s&rsquo;affrontent pour la gloire, le prestige et la reconnaissance ultime,
+                    sous le regard attentif d&rsquo;une communauté internationale.</p>
+                <p class="text-center">Que vous soyez prêt à entrer dans l&rsquo;arène ou à vibrer devant les performances spectaculaires des plus grands champions, Nexus Clash est l&rsquo;événement incontournable qui redéfinit l&rsquo;esport année après année&nbsp;!
                 </p>
         </section>
         <br>
@@ -92,23 +92,24 @@
                 class="container-fluid d-flex flex-column flex-md-row flex-md-wrap flex-lg-nowrap align-items-center justify-content-center justify-content-lg-between gap-3 gap-lg-5">
                 <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/cashprize.png"
                         alt="Icône de dotation">
-                    <p class="card-text text-center text-secondary bg-primary-subtle">5 000 € de<br>cashprize</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">5&nbsp;000&nbsp;&euro;
+                        de<br>cashprize</p>
                 </div>
                 <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img"
                         src="./images/game_selection.png" alt="Icône de jeux sélectionnés">
-                    <p class="card-text text-center text-secondary bg-primary-subtle">16 jeux<br>sélectionnés</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">16&nbsp;jeux<br>sélectionnés</p>
                 </div>
                 <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/players.png"
                         alt="Icône de joueurs participant">
-                    <p class="card-text text-center text-secondary bg-primary-subtle">128 joueurs<br>participant
+                    <p class="card-text text-center text-secondary bg-primary-subtle">128&nbsp;joueurs<br>participant
                 </div>
                 <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/audience.png"
                         alt="Icôone  de spectateurs">
-                    <p class="card-text text-center text-secondary bg-primary-subtle">50 000<br>spectateurs</p>
+                    <p class="card-text text-center text-secondary bg-primary-subtle">50&nbsp;000<br>spectateurs</p>
                 </div>
                 <div class="card col-6 col-md-4 col-lg-2 mb-3"><img class="w-100 card-img" src="./images/arenas.png"
-                        alt="Icône d'arène">
-                    <p class="card-text text-center text-secondary bg-primary-subtle">1 salle,<br>4 arènes</p>
+                        alt="Icône d&rsquo;arène">
+                    <p class="card-text text-center text-secondary bg-primary-subtle">1&nbsp;salle,<br>4&nbsp;arènes</p>
                 </div>
             </div>
         </section>
@@ -135,10 +136,11 @@
                 </div>
                 <div class="roboto-label col-12">
                     <input name="agreement" type="checkbox" class="col-1 form-check-input" />
-                    <label for="agreement" class="col-11 form-label">J'accepte que mes données soients
-                        utilisées, conformément à la <a class="text-secondary" href="./pages/404error.html" target="_blank">politique de confidentialité</a></label>
+                    <label for="agreement" class="col-11 form-label">J&rsquo;accepte que mes données soient
+                        utilisées, conformément à la <a class="text-secondary" href="./pages/404error.html"
+                            target="_blank">politique de confidentialité</a></label>
                 </div>
-                <button type="submit" class="col-12 btn btn-secondary">Participer</button>
+                <button id="participate" type="submit" class="col-12 btn btn-secondary">Participer</button>
             </form>
         </section>
         <br>
@@ -146,12 +148,16 @@
 
     <footer class="d-flex flex-column bg-primary align-items-center justify-content-center mt-3">
         <div class="flex-row">
-            <a class="text-decoration-none" href="./index.html#home"><p class="orbitron-nc-brand mt-2 d-flex align-items-center justify-content-start text-light"><img
-                    class="me-2 nc-small-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p></a>
+            <a class="text-decoration-none" href="./index.html#home">
+                <p class="orbitron-nc-brand mt-2 d-flex align-items-center justify-content-start text-light"><img
+                        class="me-2 nc-small-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS&nbsp;CLASH
+                </p>
+            </a>
         </div>
         <div class="montserrat-link d-flex flex-column flex-md-row gap-md-3 text-center">
             <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Mentions légales</p>
-                <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Politique de confidentialité</p>
+                <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Politique de
+                    confidentialité</p>
         </div>
     </footer>
 

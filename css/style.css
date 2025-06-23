@@ -125,10 +125,15 @@ Médias :
     border-width: 2px !important;
     border-radius: 10px !important;
     background-color: var(--highlight-color) !important;
+    box-shadow: 0.5rem 0.5rem 8px 2px #FFEB3B;
 }
 
-.card-img, .card-text {
-    border-radius: 10px !important;
+.card-img {
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.card-text {
+    border-radius: 8px !important;
 }
 
 .glass-text {
