@@ -22,10 +22,19 @@ Médias :
 	- fournie au format WEBP
 - Images des cartes de la section "Prochaine édition"
 	- non fournies, choix d'images entièrement libre */
+
+:root {
+    --primary-color: #4A148C;
+    --secondary-color: #FFEB3B;
+    --highlight-color: #7C4DFF;
+    --black-color: #121212;
+    --light-color: #E0E0E0;
+}
+
 .orbitron-nc-brand {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     font-style: normal;
 }
@@ -63,53 +72,72 @@ Médias :
     padding: 0.5rem 0 0 0;
 }
 
+.form-control {
+    width: 100%;
+}
+
+.form-field-box {
+    width: 100%;
+}
+
 .burger-menu {
     width: 32px;
     height: 32px;
 }
 
 .bg-primary {
-    background-color: #4A148C !important;
+    background-color: var(--primary-color) !important;
 }
 
 .bg-primary-subtle {
-    background-color: #7C4DFF !important;
+    background-color: var(--highlight-color) !important;
+}
+
+.btn:hover {
+    background-color: var(--highlight-color) !important;
 }
 
 .btn-secondary {
-    background-color: #FFEB3B !important;
+    background-color: var(--secondary-color) !important;
     color: #121212;
 }
 
 .bg-black {
-    background-color: #121212 !important;
+    background-color: var(--black-color) !important;
 }
 
 .text-secondary {
-    color: #FFEB3B !important;
+    color: var(--secondary-color) !important;
 }
 
 .text-light,
 .link-light {
-    color: #E0E0E0 !important;
+    color: var(--light-color) !important;
 }
 
 .border-secondary {
-    border-color: #FFEB3B !important;
+    border-color: var(--secondary-color) !important;
     border-radius: 10px !important;
 }
 
 .card {
-    border-color: #FFEB3B !important;
+    border-color: var(--secondary-color) !important;
     border-width: 2px !important;
+    border-radius: 10px !important;
+    background-color: var(--highlight-color) !important;
+}
+
+.card-img, .card-text {
     border-radius: 10px !important;
 }
 
 .glass-text {
     background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px) !important;
-    padding: 0.5rem 1rem !important;
-    border-radius: 0.5rem !important;
+    backdrop-filter: blur(5px) !important;
+    padding: 0.5rem !important;
+    border-radius: 10px !important;
+    bottom: 1rem;
+    margin: 0 auto !important;
 }
 
 .nc-logo {
@@ -123,18 +151,38 @@ Médias :
 }
 
 .slogan {
-    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    min-width: 250px;
 }
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .slogan {
         margin-left: 8.33% !important;
         margin-bottom: 4rem !important;
+        left: auto;
+        transform: none;
+        font-size: 1.5rem;
+    }
+
+    .orbitron-nc-brand {
+        font-size: 1.5rem;
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 992px) {
+    .form-field-box {
+        width: 48%;
+    }
 
-@media screen and (min-width: 1400px) {}
+    .slogan {
+        font-size: 1.75rem;
+    }
+
+    .orbitron-nc-brand {
+        font-size: 2rem;
+    }
+}

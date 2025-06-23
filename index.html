@@ -26,29 +26,43 @@
             <p class="orbitron-nc-brand m-0 d-flex align-items-center justify-content-start text-light"><img
                     class="me-2 nc-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
             <div class="montserrat-link">
-                <a class="d-md-none" href="./index.html#home"><img class="burger-menu" src="./images/burger.svg"
-                        alt="Logo de menu burger"></a>
+                <!-- Burger menu button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
+                    aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="d-md-none burger-menu" src="./images/burger.svg" alt="Logo de menu burger">
+                </button>
+                <!-- Collapsible navigation links -->
+                <div class="collapse" id="navbarLinks">
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="./index.html#home">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="./index.html#next-edition-container">Tournois</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light border border-2 border-secondary p-1 rounded"
+                                href="./index.html#application-form-container">Participer</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Navigation links on tablet and desktop -->
                 <a class="d-none d-md-inline-block link-light text-decoration-none" href="">Accueil</a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none" href="./index.html#next-edition-container">Tournois</a>
                 <a class="d-none d-md-inline-block link-light text-decoration-none border border-2 border-secondary p-1 rounded"
                     href="./index.html#application-form-container">Participer</a>
             </div>
         </nav>
-        <section class="position-relative w-100 mb-2">
+        <section class="position-relative w-100 d-inline-block">
             <picture>
                 <source srcset="./images/banner_full.webp" media="(min-width: 1400px)">
                 <source srcset="./images/banner_1920.webp" media="(min-width: 1200px)">
                 <source srcset="./images/banner_1280.webp" media="(min-width: 992px)">
                 <source srcset="./images/banner_960.webp" media="(min-width: 768px)">
                 <source srcset="./images/banner_768.webp" media="(min-width: 576px)">
-                <img src="./images/banner_480.webp" class="img-fluid" alt="Bannière de Nexus Clash">
+                <img src="./images/banner_768.webp" class="img-fluid" alt="Bannière de Nexus Clash">
             </picture>
-            <div class="glass-text position-absolute bg-light text-secondary slogan">
-                <p class="fs-4 text-start">
-                    Bienvenue sur <strong>Nexus Clash</strong>,<br>
-                    le cœur battant de l'esport
-                </p>
-            </div>
+            <div class="glass-text position-absolute bg-light text-secondary slogan">Bienvenue sur <strong>Nexus Clash</strong>,<br>le cœur battant de l'esport</div>
         </section>
     </header>
 
@@ -100,31 +114,31 @@
         </section>
         <br>
         <section id="application-form-container">
-            <form name="application"
+            <form id="application-form" name="application"
                 class="container-fluid d-flex flex-wrap flex-column flex-md-row justify-content-md-between col-md-10 col-lg-6 border border-2 border-secondary p-3 rounded bg-dark bg-gradient text-light">
                 <h2 class="orbitron-title col-12 mt-2">Participer à Nexus Clash</h2>
-                <div class="col-12 col-md-5">
-                    <label for="forename" class="roboto-label form-label">Prénom</label>
+                <div class="form-field-box">
+                    <label for="forename" class="roboto-label">Prénom</label>
                     <input name="forename" type="text" class="form-control" />
                 </div>
-                <div class="col-12 col-md-5">
-                    <label for="name" class="roboto-label form-label">Nom de famille</label>
+                <div class="form-field-box">
+                    <label for="name" class="roboto-label">Nom de famille</label>
                     <input name="name" type="text" class="form-control" />
                 </div>
-                <div class="col-12 col-md-5">
-                    <label for="pseudo" class="roboto-label form-label">Pseudonyme</label>
+                <div class="form-field-box">
+                    <label for="pseudo" class="roboto-label">Pseudonyme</label>
                     <input name="pseudo" type="text" class="form-control" />
                 </div>
-                <div class="col-12 col-md-5">
-                    <label for="email" class="roboto-label form-label">E-mail</label>
+                <div class="form-field-box">
+                    <label for="email" class="roboto-label">E-mail</label>
                     <input name="email" type="email" class="form-control" />
                 </div>
                 <div class="roboto-label col-12">
                     <input name="agreement" type="checkbox" class="col-1 form-check-input" />
                     <label for="agreement" class="col-11 form-label">J'accepte que mes données soients
-                        utilisées, conformément à la politique de confidentialité</label>
+                        utilisées, conformément à la <a class="text-secondary" href="./pages/404error.html" target="_blank">politique de confidentialité</a></label>
                 </div>
-                <input type="submit" value="Participer" class="col-12 btn btn-secondary" />
+                <input id="participate" type="submit" value="Participer" class="col-12 btn btn-secondary" />
             </form>
         </section>
         <br>
@@ -132,12 +146,12 @@
 
     <footer class="d-flex flex-column bg-primary align-items-center justify-content-center mt-3">
         <div class="flex-row">
-            <p class="orbitron-nc-brand mt-2 d-flex align-items-center justify-content-start text-light"><img
-                    class="me-2 nc-small-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p>
+            <a class="text-decoration-none" href="./index.html#home"><p class="orbitron-nc-brand mt-2 d-flex align-items-center justify-content-start text-light"><img
+                    class="me-2 nc-small-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS CLASH</p></a>
         </div>
         <div class="montserrat-link d-flex flex-column flex-md-row gap-md-3 text-center">
-            <a class="link-light text-decoration-none" href="">Mentions légales</p>
-                <a class="link-light text-decoration-none" href="">Politique de confidentialité</p>
+            <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Mentions légales</p>
+                <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Politique de confidentialité</p>
         </div>
     </footer>
 
