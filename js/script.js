@@ -1,4 +1,5 @@
-document.getElementById("participate").addEventListener("click", function(event){
+const button = document.querySelector('button');
+console.log(button);
+button.addEventListener('submit', (event) => {
   event.preventDefault();
-  alert("Message d'erreur.")
-}); 
+});
