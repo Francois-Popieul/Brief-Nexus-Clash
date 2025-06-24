@@ -28,7 +28,8 @@
                     class="me-2 nc-logo" src="./images/logo.svg" alt="Logo de Nexus Clash">NEXUS&nbsp;CLASH</p>
             <div class="montserrat-link">
                 <!-- Burger menu button -->
-                <button id="burger-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+                <button id="burger-button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarLinks">
                     <img class="d-md-none burger-menu" src="./images/burger.svg" alt="Logo de menu burger">
                 </button>
                 <!-- Collapsible navigation links -->
@@ -47,16 +48,17 @@
                     </ul>
                 </div>
                 <!-- Navigation links on tablet and desktop -->
-                 <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
-                <a class="d-none d-md-inline-block link-light text-decoration-none" href="./index.html#home">Accueil</a>
-                <a class="d-none d-md-inline-block link-light text-decoration-none"
-                    href="./index.html#next-edition-container">Tournois</a>
-                <a class="d-none d-md-inline-block text-decoration-none p-1 btn btn-secondary"
-                    href="./index.html#application-form-container">Participer</a>
-                    </div>
+                <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
+                    <a class="d-none d-md-inline-block link-light text-decoration-none"
+                        href="./index.html#home">Accueil</a>
+                    <a class="d-none d-md-inline-block link-light text-decoration-none"
+                        href="./index.html#next-edition-container">Tournois</a>
+                    <a class="d-none d-md-inline-block text-decoration-none p-1 btn btn-secondary"
+                        href="./index.html#application-form-container">Participer</a>
+                </div>
             </div>
         </nav>
-        <section class="position-relative w-100 d-inline-block">
+        <div class="position-relative w-100 d-inline-block">
             <picture>
                 <source srcset="./images/banner_full.webp" media="(min-width: 1400px)">
                 <source srcset="./images/banner_1920.webp" media="(min-width: 1200px)">
@@ -67,25 +69,30 @@
             </picture>
             <div class="glass-text position-absolute bg-light text-secondary slogan">Bienvenue sur <strong>Nexus
                     Clash</strong>,<br>le cœur battant de l&rsquo;esport</div>
-        </section>
+        </div>
     </header>
 
     <main class="container-fluid col-10 align-content-center justify-content-center text-light">
         <br>
         <section
             class="container-fluid d-flex flex-column align-items-center justify-content-center text-secondary col-md-10 col-lg-8">
-            <h1 class="orbitron-title text-center">Qu&rsquo;est-ce que Nexus Clash&nbsp;?</h2>
-                <p class="text-center">Nexus Clash est le plus grand événement d&rsquo;esport, qui rassemble les joueurs
-                    les plus talentueux du monde entier pour une compétition d&rsquo;une intensité inégalée.</p>
-                <p class="text-center">Chaque année, Nexus Clash devient l&rsquo;arène où les élites du gaming s&rsquo;affrontent
-                    sur un panel varié de jeux. Que vous soyez joueur, spectateur ou passionné, cet événement est une
-                    célébration de l&rsquo;esport sous toutes ses formes.</p>
-                <p class="text-center">Au cœur de l&rsquo;action, vous retrouverez des tournois légendaires, des
-                    cashprizes exceptionnels et une mise en scène immersive qui plonge les fans dans l&rsquo;univers de leurs jeux
-                    favoris. Les meilleurs joueurs s&rsquo;affrontent pour la gloire, le prestige et la reconnaissance ultime,
-                    sous le regard attentif d&rsquo;une communauté internationale.</p>
-                <p class="text-center">Que vous soyez prêt à entrer dans l&rsquo;arène ou à vibrer devant les performances spectaculaires des plus grands champions, Nexus Clash est l&rsquo;événement incontournable qui redéfinit l&rsquo;esport année après année&nbsp;!
-                </p>
+            <h1 class="orbitron-title text-center">Qu&rsquo;est-ce que Nexus Clash&nbsp;?</h1>
+            <p class="text-center">Nexus Clash est le plus grand événement d&rsquo;esport, qui rassemble les joueurs
+                les plus talentueux du monde entier pour une compétition d&rsquo;une intensité inégalée.</p>
+            <p class="text-center">Chaque année, Nexus Clash devient l&rsquo;arène où les élites du gaming
+                s&rsquo;affrontent
+                sur un panel varié de jeux. Que vous soyez joueur, spectateur ou passionné, cet événement est une
+                célébration de l&rsquo;esport sous toutes ses formes.</p>
+            <p class="text-center">Au cœur de l&rsquo;action, vous retrouverez des tournois légendaires, des
+                cashprizes exceptionnels et une mise en scène immersive qui plonge les fans dans l&rsquo;univers de
+                leurs jeux
+                favoris. Les meilleurs joueurs s&rsquo;affrontent pour la gloire, le prestige et la reconnaissance
+                ultime,
+                sous le regard attentif d&rsquo;une communauté internationale.</p>
+            <p class="text-center">Que vous soyez prêt à entrer dans l&rsquo;arène ou à vibrer devant les performances
+                spectaculaires des plus grands champions, Nexus Clash est l&rsquo;événement incontournable qui redéfinit
+                l&rsquo;esport année après année&nbsp;!
+            </p>
         </section>
         <br>
         <section id="next-edition-container" class="container-fluid d-flex flex-column">
@@ -122,27 +129,28 @@
                 <h2 class="orbitron-title col-12 mt-2">Participer à Nexus Clash</h2>
                 <div class="form-field-box">
                     <label for="forename" class="roboto-label">Prénom</label>
-                    <input name="forename" type="text" class="form-control" />
+                    <input id="forename" name="forename" type="text" class="form-control" placeholder="Jean" />
                 </div>
                 <div class="form-field-box">
-                    <label for="name" class="roboto-label">Nom de famille</label>
-                    <input name="name" type="text" class="form-control" />
+                    <label for="surname" class="roboto-label">Nom de famille</label>
+                    <input id="surname" name="surname" type="text" class="form-control" placeholder="Dupont" />
                 </div>
                 <div class="form-field-box">
-                    <label for="pseudo" class="roboto-label">Pseudonyme</label>
-                    <input name="pseudo" type="text" class="form-control" />
+                    <label for="nickname" class="roboto-label">Pseudonyme</label>
+                    <input id="nickname" name="nickname" type="text" class="form-control" placeholder="Jeannot" />
                 </div>
                 <div class="form-field-box">
                     <label for="email" class="roboto-label">E-mail</label>
-                    <input name="email" type="email" class="form-control" />
+                    <input id="email" name="email" type="email" class="form-control" placeholder="jean.dupont@blabla.com" />
                 </div>
                 <div class="roboto-label col-12">
-                    <input name="agreement" type="checkbox" class="col-1 form-check-input" />
+                    <input id="agreement" name="agreement" type="checkbox" class="col-1 form-check-input" />
                     <label for="agreement" class="col-11 form-label">J&rsquo;accepte que mes données soient
                         utilisées, conformément à la <a class="text-secondary" href="./pages/404error.html"
                             target="_blank">politique de confidentialité</a></label>
                 </div>
-                <button id="participate" type="submit" class="col-12 btn btn-secondary"><span class="participate-button-text">Participer</span></button>
+                <button id="participate" type="submit" class="col-12 btn btn-secondary"><span
+                        class="participate-button-text">Participer</span></button>
             </form>
         </section>
         <br>
@@ -157,9 +165,9 @@
             </a>
         </div>
         <div class="montserrat-link d-flex flex-column flex-md-row gap-md-3 text-center">
-            <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Mentions légales</p>
-                <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Politique de
-                    confidentialité</p>
+            <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Mentions légales</a>
+            <a class="link-light text-decoration-none" href="./pages/404error.html" target="_blank">Politique de
+                confidentialité</a>
         </div>
     </footer>
 
