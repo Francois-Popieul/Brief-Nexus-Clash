@@ -143,7 +143,8 @@ Médias :
 }
 
 .glass-text {
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.1) !important;    
+    -webkit-backdrop-filter: blur(5px) !important;
     backdrop-filter: blur(5px) !important;
     padding: 0.5rem !important;
     border-radius: 10px !important;
@@ -159,6 +160,10 @@ Médias :
 .nc-small-logo {
     width: 32px;
     height: 32px;
+}
+
+.error404 {
+    width: 50%;
 }
 
 .slogan {
@@ -182,6 +187,10 @@ Médias :
     .orbitron-nc-brand {
         font-size: 1.5rem;
     }
+
+    .error404 {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -195,5 +204,5 @@ Médias :
 
     .orbitron-nc-brand {
         font-size: 2rem;
-    }
+    }    
 }
