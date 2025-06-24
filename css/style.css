@@ -95,11 +95,17 @@ Médias :
 
 .btn:hover {
     background-color: var(--highlight-color) !important;
+    color: var(--secondary-color);
 }
 
 .btn-secondary {
     background-color: var(--secondary-color) !important;
-    color: #121212;
+    color: var(--highlight-color);
+    font-weight: 800;
+}
+
+.participate-button-text {
+    letter-spacing: 4px;
 }
 
 .bg-black {
