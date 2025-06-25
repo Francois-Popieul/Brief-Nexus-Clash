@@ -18,6 +18,6 @@ navLinks.forEach(navLink => {
 const navbarCollapse = document.getElementById('navbarLinks');
 window.addEventListener('resize', () => {
   if (window.getComputedStyle(navbarCollapse).display !== 'none') {
-      burgerButton.click();
-    }
+    burgerButton.click();
+  }
 });
